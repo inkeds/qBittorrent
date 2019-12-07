@@ -1,4 +1,5 @@
 # qBittorrent一键脚本
+
 centos7专用qBittorrent一键安装包。
 本脚本来自荒岛博客，作者lala。[原文地址](https://lala.im/4036.html)
 
@@ -10,11 +11,15 @@ centos7专用qBittorrent一键安装包。
 
 1、使用
 
-`wget https://raw.githubusercontent.com/inkeds/qBittorrent/master/qBittorrentCentOS7install.sh`
+```python
+wget https://raw.githubusercontent.com/inkeds/qBittorrent/master/qBittorrentCentOS7install.sh
+```
 
 2、安装
 
-`./qBittorrentCentOS7install.sh`
+```
+./qBittorrentCentOS7install.sh
+```
 
 # 说明
 
