@@ -4,7 +4,7 @@ centos7专用qBittorrent一键安装包。
 
 # 安装说明
 
-*<font color=#FF0000 >脚本仅支持CentOS7，64位系统！！！请使用纯净的系统安装！！！请使用ROOT用户执行脚本！！！</font>*
+<font color=#FF0000 >**脚本仅支持CentOS7，64位系统！！！请使用纯净的系统安装！！！请使用ROOT用户执行脚本！！！**</font>
 
 # 使用方法
 
