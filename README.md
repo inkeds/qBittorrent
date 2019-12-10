@@ -13,11 +13,11 @@ centos7专用qBittorrent一键安装包。
 
 # 使用方法
 
-CentOS7的GCC和Boost版本过低，请先升级
+CentOS7的 `GCC` 和 `Boost` 版本过低，请先升级!
 
 ### 一、升级编译器
 
-**1、升级GCC
+**1、升级GCC**
 
 ```
 yum install centos-release-scl
@@ -25,7 +25,7 @@ yum install devtoolset-7-gcc*
 scl enable devtoolset-7 bash
 ```
 
-**2、升级Boost
+**2、升级Boost**
 
 ```
 yum -y install wget zlib-devel bzip2-devel
@@ -72,13 +72,13 @@ ldconfig -v
 
 ### 二、一键脚本安装
 
-**1、使用
+**1、使用**
 
 ```python
 wget https://raw.githubusercontent.com/inkeds/qBittorrent/master/qBittorrentCentOS7install.sh && chmod +x qBittorrentCentOS7install.sh
 ```
 
-**2、安装
+**2、安装**
 
 ```
 ./qBittorrentCentOS7install.sh
