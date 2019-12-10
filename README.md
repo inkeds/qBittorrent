@@ -12,7 +12,7 @@ centos7专用qBittorrent一键安装包。
 1、使用
 
 ```python
-wget https://raw.githubusercontent.com/inkeds/qBittorrent/master/qBittorrentCentOS7install.sh
+wget https://raw.githubusercontent.com/inkeds/qBittorrent/master/qBittorrentCentOS7install.sh && chmod +x qBittorrentCentOS7install.sh
 ```
 
 2、安装
