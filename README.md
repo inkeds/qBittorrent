@@ -9,6 +9,65 @@ centos7专用qBittorrent一键安装包。
 
 # 使用方法
 
+CentOS7的GCC和Boost版本过低，请先升级
+
+### 一、升级编译器
+
+1、升级GCC
+
+```
+yum install centos-release-scl
+yum install devtoolset-7-gcc*
+scl enable devtoolset-7 bash
+```
+
+2、升级Boost
+
+```
+yum -y install wget zlib-devel bzip2-devel
+wget https://dl.bintray.com/boostorg/release/1.70.0/source/boost_1_70_0.tar.gz
+tar -xzvf boost_1_70_0.tar.gz
+cd boost_1_70_0
+```
+
+构建参数如下：
+
+```
+./bootstrap.sh --with-libraries=all --with-python=/usr/bin/python3 --with-python-root=/usr/lib64/python3.6 --with-python-version=3.6
+```
+
+编辑如下文件：
+
+```
+nano project-config.jam
+```
+
+默认你应该可以看到下面这一段配置：
+
+```
+{
+    using python : 3.6 : /usr/lib64/python3.6 ;
+}
+```
+
+改为：
+
+```
+{
+    using python : 3.6 : /usr/lib64/python3.6 : /usr/include/python3.6m : /lib ;
+}
+```
+
+编译并安装：
+
+```
+./b2 cxxflags="--std=c++11" -j8
+./b2 install --prefix=/usr
+ldconfig -v
+```
+
+### 二、一键脚本安装
+
 1、使用
 
 ```python
